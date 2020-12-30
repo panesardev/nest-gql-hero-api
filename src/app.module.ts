@@ -7,7 +7,8 @@ import { HeroesModule } from './heroes/heroes.module';
 @Module({
   imports: [
     GraphQLModule.forRoot({
-      autoSchemaFile: 'src/schema.gql'
+      autoSchemaFile: 'src/schema.gql',
+      playground: true,
     }),
     ConfigModule.forRoot({
       isGlobal: true
