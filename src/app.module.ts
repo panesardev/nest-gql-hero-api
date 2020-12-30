@@ -9,6 +9,7 @@ import { HeroesModule } from './heroes/heroes.module';
     GraphQLModule.forRoot({
       autoSchemaFile: 'src/schema.gql',
       playground: true,
+      introspection: true
     }),
     ConfigModule.forRoot({
       isGlobal: true
