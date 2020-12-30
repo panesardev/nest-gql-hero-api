@@ -1,0 +1,31 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Hero {
+  heroId: String!
+  name: String!
+  health: Int!
+}
+
+type Query {
+  heroes: [Hero!]!
+  hero(heroId: String!): Hero!
+}
+
+type Mutation {
+  createHero(createHeroInput: CreateHeroInput!): Hero!
+  updateHero(updateHeroInput: UpdateHeroInput!): Hero!
+  removeHero(heroId: String!): Hero!
+}
+
+input CreateHeroInput {
+  name: String!
+  health: Int!
+}
+
+input UpdateHeroInput {
+  name: String!
+  health: Int!
+  heroId: String!
+}
